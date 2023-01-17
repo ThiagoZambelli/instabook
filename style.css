@@ -22,7 +22,7 @@ body{
 }
 .corpo-site{
     width: 80%;
-    margin: 0 auto;    
+    margin: 0 auto;      
 }
 /************************ Style set header ************************/
 /******** Tentativa de criar abas semelhantes a divisorias de agenda ********/
@@ -31,7 +31,9 @@ body{
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 10px 10px 0 0;
-    
+    border-top: 0.5px solid black;
+    border-left: 0.5px solid black; 
+    border-right: 0.5px solid black;    
 }
 .top-header h1{
     display: inline;
@@ -105,5 +107,25 @@ body{
 .corpo-body{
     padding: 3rem;
     background-color: #F2CA99;
+    border-left: 0.5px solid black; 
+    border-right: 0.5px solid black; 
    
+}
+
+/**********************************************************/
+
+/************************ Style set footer************************/
+.corpo-footer{
+    background-color: #594442;
+    text-align: center;
+    padding: 1rem;
+    border-top: 3px solid black;
+}
+.logo-footer img{
+    width: 6rem;
+    padding: 1rem;
+}
+.copyrigth{
+    font-size: 0.6rem;
+    color: white;
 }
