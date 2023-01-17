@@ -1,26 +1,109 @@
-.corpo-header{
-    width: 80%;
-    margin: 0 auto;
+/**************** Paleta de cores do site ***************/
+/********                                        ********/
+/********                                        ********/
+/******** Cinza - #D0D3D9                        ********/
+/******** Cor do interior do livro #F2CA99       ********/
+/******** Cor Media (marrom clarinho) - #BF947A  ********/
+/******** Cor das Paginas - #F2D8C9              ********/
+/******** Cor da Capa (marrom escuro) - #594442  ********/
+/********                                        ********/
+/********                                        ********/
+/********************************************************/
+
+
+/******** Definição do font-size de todo o html para padronozação do REM ********/
+html{
+    font-size: 20px;
 }
-.logo-header{
+/********************************************************************************/
+/**************** Cor de fundo do site ***************/
+body{
+    background-color: #D0D3D9;    
+}
+.corpo-site{
+    width: 80%;
+    margin: 0 auto;    
+}
+/************************ Style set header ************************/
+/******** Tentativa de criar abas semelhantes a divisorias de agenda ********/
+.corpo-header{
+    background-color: #F2D8C9;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px 10px 0 0;
+    
+}
+.top-header h1{
     display: inline;
 }
-.logo-header img{
-    max-width: 50%;
-    display: block;
-    margin: 0 auto;
-}
-.menu-header{
-    text-align: center;
-}
-.menu-header li {
-    width: 15%;
-    height: 4rem;
+.logo-header{
     display: inline-block;
-    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
+    margin: 0 0 0 2rem;
+}
+.logo-header:hover{
+    transform: scale(1.02);
+
+}
+#botaoLogoff{
+    display: inline;
     vertical-align: top;
+    float: right;
+    border: none;
+    font-size: 1rem;
+    background-color:#D0D3D9 ;
+    color: #594442;
     padding: 0.5rem;
-    border-right: 1px solid black ;
+    margin: 2rem;
+    cursor: pointer;
+    border-top: 2px solid white ;
+    border-left: 1.5px solid white ;
+    border-right: 2px solid black ;
+    border-bottom: 0.5px solid black ;
     border-radius: 0 10px 0 0;
-    box-shadow: 5px 0 2px 0;
+}
+#botaoLogoff:hover{
+    transform: scale(1.01);
+    border-radius: 0 10px 0 0;    
+}
+#botaoLogoff:active{
+    border-left: 0.1px solid black;
+    border-top: 0.1px solid black;
+    border-right: 0.1px solid white;
+    border-bottom: 0.1px solid white;
+}
+.corpo-header nav{
+    text-align: center;    ;
+}
+.abas-header{
+    display: inline-block;
+    width: 15%;
+    padding: 0.5rem;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    font-size: 1rem;
+    transition: 0.2s;
+    border-radius: 0 15px 0 0;
+    background-color: #F2CA99 ;
+    color: #594442;   
+}
+.abas-header:hover{
+    transform: scale(1.02);
+    border-top:2px solid grey ;
+    border-right: 3px solid black;   
+}
+.aba-ativa{
+    width: 30%;
+    font-size: 2rem;    
+}
+/**********************************************************/
+
+/************************ Style set body ************************/
+
+.corpo-body{
+    padding: 3rem;
+    background-color: #F2CA99;
+   
 }
