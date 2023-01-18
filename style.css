@@ -168,8 +168,8 @@ body{
 .texto__body__quemsomos em{
     color: var(--Marrom-capa);
 }
-.quem__sou{   
-   
+.texto__quem__sou{   
+   text-align: justify;
 }
 .quem__sou em{    
     font-style: italic;    
