@@ -141,11 +141,12 @@ body{
     font-family: var(--fonte-cursiva);  
 }
 .titulo__quem__somos{
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--Marrom-capa);
-    margin: 0 1rem 0 1rem;   
+    margin-top: 2rem;
+    margin-bottom: 2rem;  
 }
 .texto__quemsomos{
     font-size: 3rem;
@@ -155,22 +156,22 @@ body{
 .texto__body__quemsomos em{
     color: var(--Marrom-capa);
 }
-.quem__sou{
-    font-size: 3rem;
-    text-align: center;
+.quem__sou{   
+   
 }
 .quem__sou em{    
-    font-style: italic;
-    text-decoration: underline;
+    font-style: italic;    
 }
 .titulo__quem__somos img{
-    width: 4rem;
+    width: 5rem;
+    margin: 0 2rem 0 2rem;
 }
 .subtitulo__quem__somos__body{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--marrom-claro);
     padding: 0 0 1rem 0;
+    text-decoration: underline;
 }
 .assinatura__texto{
     text-align: right;
@@ -182,25 +183,51 @@ body{
 /************************ Style set index ************************/
 .feed{
     width: 90%;
-    margin: 0 auto;
-    background-color: #F2D8C9;
+    margin: 0 auto;    
     padding-top: 4rem;
 
 }
+
 .postagem__cabecalho{
     display: grid;
     grid-template-columns: 30% 70%;
+    background-color: var(--cinza-principal);
+    padding: 2rem 0 1rem 0;
+    border-right: 0.5rem solid var(--Marrom-capa);
+    border-left: 0.5rem solid var(--Marrom-capa);
+    border-top: 0.5rem solid var(--Marrom-capa);
 }
 .postagem__avatar{
     width: 50%;
     margin: auto;
 }
+.postagem__cabecalho__info{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
 .postagem__autor{
     text-align: left;
+    font-size: 3rem;
 }
 .postagem__titulo{
     text-align: center;
-    
+    font-size: 2rem;   
+}
+.postagem__corpo{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--branco-pricipal);
+    border-top: 1px dashed var(--Marrom-capa);    
+    border-bottom: 0.5rem solid var(--Marrom-capa);
+    border-right: 0.5rem solid var(--Marrom-capa);
+    border-left: 0.5rem solid var(--Marrom-capa);
+}
+.postagem__texto{
+    text-align: left;
+    font-size: 1rem;
+}
+.postagem__assinatura{
+    text-align: right;
+    font-size: 1rem;
 }
 
 /*****************************************************************/
