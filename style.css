@@ -9,33 +9,51 @@
 /********                                        ********/
 /********                                        ********/
 /********************************************************/
-
+:root{
+    --cinza-principal: #d0d3d9;
+    --beje-paginas: #f2ca99;
+    --marrom-claro: #bf947a;
+    --beje-claro: #f2d8c9;
+    --Marrom-capa: #594442;
+    --branco-pricipal: #ffffff;
+    --fonte-cursiva:'Dancing Script';
+}
+.container{
+    height: 100vh;
+    margin: 2rem 0 2rem 0;
+}
+.separacao__container{
+    border-bottom: 5px dashed var(--Marrom-capa);
+}
 
 /******** Definição do font-size de todo o html para padronozação do REM ********/
-html{
+body{
     font-size: 20px;
+    font-weight: 400;
 }
+
 /********************************************************************************/
 /**************** Cor de fundo do site ***************/
 body{
-    background-color: #D0D3D9;    
+    background-color: var(--cinza-principal);    
 }
-.corpo-site{
-    width: 80%;
-    margin: 0 auto;      
+.container__nav__body__nav{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    margin-top: 2rem;     
 }
 /************************ Style set header ************************/
+
 /******** Tentativa de criar abas semelhantes a divisorias de agenda ********/
 .corpo-header{
     background-color: #F2D8C9;
-    margin: 0 auto;
-    margin-top: 2rem;
+    margin: 0 auto;    
     border-radius: 10px 10px 0 0;
     border-top: 0.5px solid black;
     border-left: 0.5px solid black; 
     border-right: 0.5px solid black;    
 }
-.top-header h1{
+.corpo-header h1{
     display: inline;
 }
 .logo-header{
@@ -54,13 +72,13 @@ body{
     float: right;
     border: none;
     font-size: 1rem;
-    background-color:#D0D3D9 ;
-    color: #594442;
+    background-color:var(--cinza-principal) ;
+    color: var(--Marrom-capa);
     padding: 0.5rem;
     margin: 2rem;
     cursor: pointer;
-    border-top: 2px solid white ;
-    border-left: 1.5px solid white ;
+    border-top: 2px solid var(--branco-pricipal) ;
+    border-left: 1.5px solid var(--branco-pricipal) ;
     border-right: 2px solid black ;
     border-bottom: 0.5px solid black ;
     border-radius: 0 10px 0 0;
@@ -72,8 +90,8 @@ body{
 #botaoLogoff:active{
     border-left: 0.1px solid black;
     border-top: 0.1px solid black;
-    border-right: 0.1px solid white;
-    border-bottom: 0.1px solid white;
+    border-right: 0.1px solid var(--branco-pricipal);
+    border-bottom: 0.1px solid var(--branco-pricipal);
 }
 .corpo-header nav{
     text-align: center;    ;
@@ -82,13 +100,13 @@ body{
     display: inline-block;
     width: 15%;
     padding: 0.5rem;
-    border-right: 3px solid white;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
+    border-right: 3px solid var(--branco-pricipal);
+    border-top: 3px solid var(--branco-pricipal);
+    border-left: 3px solid var(--branco-pricipal);
     font-size: 1rem;
     transition: 0.2s;
     border-radius: 0 15px 0 0;
-    background-color: #F2CA99 ;
+    background-color:var(--beje-paginas) ;
     color: #594442;   
 }
 .abas-header:hover{
@@ -104,19 +122,92 @@ body{
 
 /************************ Style set body ************************/
 
-.corpo-body{
+.corpo-main{
     padding: 3rem;
-    background-color: #F2CA99;
+    background-color: var(--beje-paginas);
     border-left: 0.5px solid black; 
-    border-right: 0.5px solid black; 
-   
+    border-right: 0.5px solid black;
+    text-align: center;   
 }
 
-/**********************************************************/
+
+/************************ Style set quem somos ************************/
+.corpo__quem__somos{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--branco-pricipal);
+    border: 2px dashed var(--Marrom-capa);
+    padding: 2rem; 
+    font-family: var(--fonte-cursiva);  
+}
+.titulo__quem__somos{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--Marrom-capa);
+    margin: 0 1rem 0 1rem;   
+}
+.texto__quemsomos{
+    font-size: 3rem;
+    color: var(--marrom-claro);
+    margin: 2rem;      
+}
+.texto__body__quemsomos em{
+    color: var(--Marrom-capa);
+}
+.quem__sou{
+    font-size: 3rem;
+    text-align: center;
+}
+.quem__sou em{    
+    font-style: italic;
+    text-decoration: underline;
+}
+.titulo__quem__somos img{
+    width: 4rem;
+}
+.subtitulo__quem__somos__body{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--marrom-claro);
+    padding: 0 0 1rem 0;
+}
+.assinatura__texto{
+    text-align: right;
+}
+
+
+/*****************************************************************/
+
+/************************ Style set index ************************/
+.feed{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #F2D8C9;
+    padding-top: 4rem;
+
+}
+.postagem__cabecalho{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.postagem__avatar{
+    width: 50%;
+    margin: auto;
+}
+.postagem__autor{
+    text-align: left;
+}
+.postagem__titulo{
+    text-align: center;
+    
+}
+
+/*****************************************************************/
 
 /************************ Style set footer************************/
 .corpo-footer{
-    background-color: #594442;
+    background-color: var(--Marrom-capa);
     text-align: center;
     padding: 1rem;
     border-top: 3px solid black;
@@ -127,5 +218,5 @@ body{
 }
 .copyrigth{
     font-size: 0.6rem;
-    color: white;
+    color: var(--branco-pricipal);
 }
