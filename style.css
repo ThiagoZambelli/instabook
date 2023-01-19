@@ -16,11 +16,22 @@
     --beje-claro: #f2d8c9;
     --Marrom-capa: #594442;
     --branco-pricipal: #ffffff;
+    --preto-principal: black;
+    --amarelo-ouro: #A67D03;
     --fonte-cursiva:'Dancing Script';
 }
 .container{
     height: 100vh;
     margin: 2rem 0 2rem 0;
+}
+.container__label{
+    display: block;
+}
+.container__input{
+    display: block;
+    background-color: var(--branco-pricipal);
+    border: 1px solid var(--preto-principal);
+    border-bottom: 2px solid var(--preto-principal) ;
 }
 .separacao__container{
     border-bottom: 5px dashed var(--Marrom-capa);
@@ -98,12 +109,10 @@ body{
     cursor: pointer;
 }
 #botaoLogoff:hover{
-    transform: scale(1.02);
-    border-radius: 0 10px 0 0;    
+    transform: scale(1.02);        
 }
 #botaoLogoff:active{
-    border-left: 0.1px solid black;
-    border-top: 0.1px solid black;    
+    border-left: 0.2px solid black;       
 }
 .corpo-header nav{
     text-align: center;
@@ -150,7 +159,7 @@ body{
     background-color: var(--branco-pricipal);
     border: 2px dashed var(--Marrom-capa);
     padding: 2rem; 
-    font-family: var(--fonte-cursiva);  
+    font-family: var(--fonte-cursiva)  
 }
 .titulo__quem__somos{
     font-size: 3rem;
@@ -243,10 +252,75 @@ body{
 }
 
 /*****************************************************************/
+/************************ Style set Login ************************/
+.capa__login{
+    margin: 4rem auto 4rem auto;
+    padding: 2rem;
+    width: 45%;
+    height: 150vh;
+    background-color: var(--Marrom-capa);
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    border: 10px groove var(--amarelo-ouro);
+    border-radius: 0 20px 20px 0;   
+    box-shadow: 8px -8px var(--beje-claro), 10px -10px var(--preto-principal), 15px -15px var(--beje-claro), 18px -18px var(--preto-principal), 25px -25px var(--amarelo-ouro);
+}
+.capa__login__cabecalho{
+    border-radius: 15px;
+    border: 3px dashed var(--preto-principal);
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 60%;
+    background-color: var(--cinza-principal);
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+}
+.capa__login__corpo{
+    display: block;
+    height: 60vh;
+    width: 50%;
+    margin: 6rem auto 0 auto;    
+}
+.login__formulario{
+    text-transform: uppercase;  
+    padding: 2rem;
+    background-color: var(--beje-claro);
+    border: 5px groove var(--amarelo-ouro);
+}
+.input__login{
+    width: 90%;
+    margin: 1rem auto 2rem auto;
+    padding: 0.5rem;
+}
+.login__formulario-inputs button{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;    
+}
+#botaoEntrar{
+    background-image: url(bg__entrar.png);
+    text-align: left;
+    color: var(--Marrom-capa);
+}
+#botaoCadastro{
+    background-image: url(bg__cadastro.png);
+    text-align: left;
+    color: var(--Marrom-capa);
+}
+.login__botoes button:hover{
+    transform: scale(1.05);    
+}
+.capa__login__rodape{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/*****************************************************************/
 
 /************************ Style set footer************************/
 .corpo-footer{
     background-color: var(--Marrom-capa);
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
     text-align: center;
     padding: 1rem;
     border-top: 3px solid black;
@@ -257,5 +331,5 @@ body{
 }
 .copyrigth{
     font-size: 0.6rem;
-    color: var(--branco-pricipal);
+    color: var(--branco-pricipal);   
 }
