@@ -256,8 +256,7 @@ body{
 .capa__login{
     margin: 4rem auto 4rem auto;
     padding: 2rem;
-    width: 45%;
-    height: 150vh;
+    width: 50%;    
     background-color: var(--Marrom-capa);
     background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
     border: 10px groove var(--amarelo-ouro);
@@ -274,10 +273,10 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
 }
 .capa__login__corpo{
-    display: block;
-    height: 60vh;
+    display: block;    
     width: 50%;
-    margin: 6rem auto 0 auto;    
+    margin: 6rem auto 0 auto;
+    color: var(--Marrom-capa);   
 }
 .login__formulario{
     text-transform: uppercase;  
@@ -298,16 +297,15 @@ body{
 }
 #botaoEntrar{
     background-image: url(bg__entrar.png);
-    text-align: left;
-    color: var(--Marrom-capa);
+    text-align: left;    
 }
 #botaoCadastro{
     background-image: url(bg__cadastro.png);
-    text-align: left;
-    color: var(--Marrom-capa);
+    text-align: left;    
 }
 .login__botoes button:hover{
-    transform: scale(1.05);    
+    transform: scale(1.05);
+    color: var(--branco-pricipal);   
 }
 .capa__login__rodape{
     text-align: center;
